@@ -1,0 +1,226 @@
+body {
+    height: auto;
+    background: #efefef;
+    font-family: 'Sunflower', sans-serif;
+}
+
+
+/* animation */
+
+@keyframes fade-slide-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-5rem);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fade-slide-left {
+    0% {
+        opacity: 0;
+        transform: translateX(5rem);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+/* header */
+
+header {
+    animation: fade-slide-right .8s ease-out forwards;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+/* navbar */
+
+ul {
+    margin-top: 0;
+    list-style-type: none;
+    font-size: 17px;
+    text-align: right;
+    line-height: 60px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Spartan', sans-serif;
+    transition: 0.5s;
+    padding: 15px;
+    border-color: whitesmoke;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+li a:hover {
+    font-weight: bolder;
+    border-color: whitesmoke;
+    border-right: 2px solid;
+    border-left: 2px solid;
+    border-bottom: none;
+    border-top: none;
+}
+
+ul li:hover ul {
+    display: block;
+    padding: 0;
+}
+
+ul li ul {
+    display: none;
+}
+
+
+/* end navbar */
+
+
+/* text jumbotron */
+
+.text-center {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    padding-top: 15rem;
+}
+
+p {
+    font-family: 'Dancing Script', cursive;
+    background: linear-gradient(to left, white, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#hikmah {
+    color: black;
+}
+
+
+/* end text jumbotron */
+
+.background-image {
+    animation: fade-slide-left .8s ease-out forwards;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+/* about */
+
+#table-about {
+    width: 50%;
+}
+
+td,
+th {
+    text-align: left;
+    padding: 5px 35px;
+    border-bottom: 1px solid gray;
+}
+
+
+/* history */
+
+#table-history {
+    width: 40%;
+    margin-left: 55%;
+}
+
+.history {
+    animation: fade-slide-right .8s ease-out forwards;
+    background-position: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+/* skills */
+
+.text-skill {
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 10rem;
+}
+
+
+/* contact */
+
+#contact {
+    text-align: center;
+    padding: 5px;
+}
+
+
+/* footer */
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    right: 47.5%;
+    margin-top: auto;
+}
+
+
+/* style tugas 2 */
+
+.table-tugas {
+    width: 50%;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+}
+
+
+/* end style tugas 2 */
+
+
+/* style tugas 3 */
+
+input[type=number] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.form {
+    font-family: 'Roboto Mono', monospace;
+}
+
+button {
+    font-family: 'Roboto Mono', monospace;
+    font-size: medium;
+    background-color: whitesmoke;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
